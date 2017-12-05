@@ -11,9 +11,7 @@ args = vars(parser.parse_args())
 
 def maskMix(viterbi,markers,beagle,ancestry):
 
-    #viterbi="GlobalRecipientsJuhoansiKeptConfidence0.95Ratio0.2.vit"
-    #markers="GlobalRecipients.markers"
-    #beagle="GlobalRecipientsJuhoansiKeptRatio0.2.bgl"
+    
     
     outName="TestMaskNov.bgl"
     
