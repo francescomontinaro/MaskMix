@@ -2,7 +2,7 @@
 
 This is the script used in Montinaro et al. 2016 *"Complex Ancient Genetic Structure and Cultural Transitions in Southern African Populations"* (Genetics).
 
-Basically, the program takes beagle file and PCAdmix output and return a masked Beagle in which only one ancestry is kept.
+Basically, the program takes beagle file and PCAdmix output and returns a masked Beagle in which only one ancestry is kept.
 
 ### Requirements
 The software is written following the python 3.5+ syntax.
