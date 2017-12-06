@@ -7,13 +7,16 @@ parser.add_argument('--viterbi','-v',help="Viterbi file",required=True)
 parser.add_argument('--markers','-m',help='MArker file in PCAdmix format',required=True)
 parser.add_argument('--beagle','-b',help='Beagle file',required=True)
 parser.add_argument('--ancestry','-a',help='Index of the ancestry to keep',required=True)
+parser.add_argument('--out','-o',help='Output filename',required=True)
 args = vars(parser.parse_args())
 
-def maskMix(viterbi,markers,beagle,ancestry):
+def maskMix(viterbi,markers,beagle,ancestry,outName):
 
+    #viterbi="GlobalRecipientsJuhoansiKeptConfidence0.95Ratio0.2.vit"
+    #markers="GlobalRecipients.markers"
+    #beagle="GlobalRecipientsJuhoansiKeptRatio0.2.bgl"
     
-    
-    outName="TestMaskNov.bgl"
+    #outName="TestMaskNov.bgl"
     
     '''0.01 Define which ancestry to keep'''
 
@@ -95,5 +98,5 @@ def maskMix(viterbi,markers,beagle,ancestry):
                     i+=1
 
 
-maskMix(args['viterbi'], args['markers'], args['beagle'],args['ancestry'])
+maskMix(viterbi=args['viterbi'], markers=args['markers'],beagle= args['beagle'],ancestry=args['ancestry'],outName=args['out'])
                 
